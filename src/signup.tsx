@@ -4,10 +4,10 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-nativ
 import { RootStackParamList } from '../navigation/type';
 
 
-type LoginNaviProp = StackNavigationProp<RootStackParamList, 'Sign Up'>
+type SignUpNaviProp = StackNavigationProp<RootStackParamList, 'Sign Up'>
 export default function signup() {
-    const navigation = useNavigation<LoginNaviProp>();
-    const handleLogin = () => {
+    const navigation = useNavigation<SignUpNaviProp>();
+    const handleSignUp = () => {
         navigation.navigate('Login')
     }
     return(
@@ -17,7 +17,7 @@ export default function signup() {
               <TextInput placeholder='Username' style={styles.input} />
               <TextInput placeholder='Email' style={styles.input} />
               <TextInput placeholder='Password' style={styles.input} />
-              <TouchableOpacity style={styles.button} onPress={handleLogin}><Text style={styles.textButton}>Register</Text></TouchableOpacity>
+              <TouchableOpacity style={styles.button} onPress={handleSignUp}><Text style={styles.textButton}>Register</Text></TouchableOpacity>
         </View>
     </View>
     );  
