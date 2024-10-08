@@ -10,11 +10,30 @@ const Stack = createStackNavigator();
 export default function StackNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator initialRouteName='Login' screenOptions={{
+          headerStyle: {
+            backgroundColor: 'cyan',
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      >
         <Stack.Screen name="Login" component={login} />
         <Stack.Screen name="Sign Up" component={signup} />
-        <Stack.Screen name="Home" component={Home}/>
+        <Stack.Screen name="Home" component={Home} options={{
+          title: "Trang chu", headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
+
+// options duoc uu tien hon screenoptions
