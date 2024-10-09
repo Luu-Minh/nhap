@@ -25,7 +25,7 @@ export default function TabNavigation() {
                 },
             })}
             >
-                <Tab.Screen name="Home" component={StackNavigator}/>
+                <Tab.Screen name="Home" component={StackNavigator} options={{headerShown: false}}/>
                 <Tab.Screen name="Watch" component={Watch}/>
                 <Tab.Screen name="Search" component={Search}/>
             </Tab.Navigator >

@@ -17,7 +17,7 @@ export default function Home() {
             <Text>Home</Text>
             <Text>Name: {name}</Text>
             <Button title="Đăng xuất" onPress={() => navigation.navigate("Login")} />
-            {/* <Button title="Go back" onPress={() => navigation.goBack()}/> */}
+            <Button title="Go back" onPress={() => navigation.goBack()}/>
         </SafeAreaView>
     )
 }
