@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 
 export default function StackNavigator() {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
       <Stack.Navigator initialRouteName='Login' screenOptions={{
           headerStyle: {
             backgroundColor: 'cyan',
@@ -32,7 +32,7 @@ export default function StackNavigator() {
           },
         }} /> 
       </Stack.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   );
 };
 
